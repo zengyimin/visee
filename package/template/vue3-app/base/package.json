@@ -1,0 +1,44 @@
+{
+  "name": "@tencent/vise-cli-template",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "@tencent/vise": "^0.6.1",
+    "@tencent/vise-express-server": "0.6.0",
+    "sass": "^1.50.1"
+  },
+  "devDependencies": {
+    "@tencent/epc-commit-lint": "^1.0.10",
+    "@tencent/eslint-config-tencent": "^0.15.2",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "@vue/test-utils": "^2.0.0",
+    "typescript": "~4.6.3",
+    "vue-jest": "^5.0.0-alpha.10",
+    "eslint": "^7.32.0",
+    "eslint-plugin-folders": "^1.0.3",
+    "eslint-plugin-unicorn": "^37.0.1",
+    "eslint-plugin-vue": "^7.17.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    },
+    "rollup": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "dev": "vise dev",
+    "build": "vise build",
+    "serve": "vise serve",
+    "lint": "eslint --ext .ts,.js,.vue ./src",
+    "test": "jest --json --coverage --outputFile=result.json --forceExit"
+  },
+  "repository": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": ""
+}
